@@ -14,4 +14,4 @@ After this last action is registered, it will only occur after *all* the conditi
 
 ## Installation Notes
 
-The plugin can be installed using the **When Wizard Manager**: the two *.wwpz* packages must be installed using the *Plugins* tab, and the provided *.widf* file has to be imported using the *Import* tab. No parameters have to be specified for the *.widf* file. To uninstall the plugin, both the *Confluence* and *Confluent Task* plugins must be removed, as well as the *.widf* item definition file.
+The plugin can be installed using the **When Wizard Manager**: the two *.wwpz* packages must be installed using the *Plugins* tab, and the provided *.widf* file has to be imported using the *Import* tab. No parameters have to be specified for the *.widf* file. To uninstall the plugin, both the *confluence* and *cond-confluence* plugins must be removed, as well as the *confluence.widf* item definition file, respectively in the *Plugins* and *Import* panes of the **When Wizard Manager**.
