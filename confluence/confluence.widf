@@ -1,0 +1,15 @@
+# Item Definition File for the Confluence plugin
+# Removes remaining '.run' files from the plugin store directory
+
+[plugin_confluence-Cleanup]
+type: task
+command: [ -d "$HOME/.config/when-command/when-wizard/plugin_confluence" ] && rm -f "$HOME/.config/when-command/when-wizard/plugin_confluence"/*.run
+check for: nothing
+
+[plugin_confluence-StartupEvent]
+type: condition
+based on: event
+event type: startup
+task names: plugin_confluence-Cleanup
+
+# end.
